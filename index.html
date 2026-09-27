@@ -403,7 +403,7 @@
 
       <h2 id="principles">基本主張</h2>
       <ul>
-        <li><strong>民主.主義：</strong>反對共産主義與殖民主義，主張中華民族自求解放，國內各民族一律平等。</li>
+        <li><strong>民主主義：</strong>反對共産主義與殖民主義，主張中華民族自求解放，國內各民族一律平等。</li>
         <li><strong>民權主義：</strong>實行權能區分，政權歸於人民，治權付諸政府，以五權憲法為框架。</li>
         <li><strong>民生主義：</strong>節制資本，平均地權，耕者有其田，建立均富的社會經濟體系。</li>
       </ul>
@@ -425,7 +425,7 @@
 
           <div class="mail-notice">
             請填寫以下資料，選擇下方任一方式送出：<br>
-            <strong>xgwtzz@qq.com</strong>
+            <strong>hexiao_ctp@outlook.com</strong>
           </div>
 
           <form onsubmit="sendMail(event)">
@@ -455,7 +455,7 @@
 
             <p class="card-note">
               若點擊後沒有反應，請改用「複製申請內容」，<br>
-              再手動貼到您的電子信箱寄送至 <strong>xgwtzz@qq.com</strong>。
+              再手動貼到您的電子信箱寄送至 <strong>hexiao_ctp@outlook.com</strong>。
             </p>
 
           </form>
@@ -510,7 +510,7 @@
       var data = buildMailBody();
       if (!data) return;
 
-      window.location.href = 'mailto:xxx@xxx.com'
+      window.location.href = 'mailto:hexiao_ctp@outlook.com'
         + '?subject=' + encodeURIComponent(data.subject)
         + '&body=' + encodeURIComponent(data.body);
     }
@@ -519,13 +519,13 @@
       var data = buildMailBody();
       if (!data) return;
 
-      var fullText = '收件人：xgwtzz@qq.com\n'
+      var fullText = '收件人：hexiao_ctp@outlook.com\n'
                    + '主旨：' + data.subject + '\n\n'
                    + data.body;
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(fullText).then(function () {
-          alert('✓ 已複製申請內容！\n\n請開啟您的電子信箱，貼上內容並寄送至 xgwtzz@qq.com');
+          alert('✓ 已複製申請內容！\n\n請開啟您的電子信箱，貼上內容並寄送至 hexiao_ctp@outlook.com');
         }).catch(function () {
           fallbackCopy(fullText);
         });
@@ -543,7 +543,7 @@
       ta.select();
       try {
         document.execCommand('copy');
-        alert('✓ 已複製申請內容！\n\n請開啟您的電子信箱，貼上內容並寄送至 xgwtzz@qq.com');
+        alert('✓ 已複製申請內容！\n\n請開啟您的電子信箱，貼上內容並寄送至 hexiao_ctp@outlook.com');
       } catch (err) {
         alert('複製失敗，請手動複製。');
       }
